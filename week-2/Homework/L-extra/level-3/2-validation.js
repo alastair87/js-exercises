@@ -6,7 +6,13 @@
 
 var excludedNums = [6, 14, 91, 111];
 
-function validate(num) {}
+const isNumber = num => typeof num === "number";
+
+const isExcluded = num => excludedNums.includes(num);
+
+function validate(num) {
+  return isNumber(num) && Number.isInteger(num) && !isExcluded(num);
+}
 
 console.log(validate(6));
 console.log(validate(10.5));
