@@ -4,7 +4,15 @@
 // - is less than or equal to 100
 // Tip: write other small functions for each requirement
 
-function validate(num) {}
+const isNumber = num => typeof num === "number";
+
+const isPositive = num => num > 0;
+
+const isLessThanOrEqualTo100 = num => num <= 100;
+
+function validate(num) {
+  return isNumber(num) && isPositive(num) && isLessThanOrEqualTo100(num);
+}
 
 /*
   DO NOT EDIT BELOW THIS LINE
