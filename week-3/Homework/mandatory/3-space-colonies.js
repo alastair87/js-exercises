@@ -8,8 +8,8 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
-
+function colonisers(voyagers) {
+  return voyagers.filter(voyager => voyager[0] === "A" && voyager.split(" ").pop() === "family"); 
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
