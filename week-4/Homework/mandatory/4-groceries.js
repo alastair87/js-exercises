@@ -12,7 +12,7 @@ let groceryList = {
 };
 
 for (item in groceryList) {
-  groceriesToBuy.push((`${groceryList[item]}`));
+  groceriesToBuy.push(groceryList[item]);
 }
 
 console.log(groceriesToBuy);
