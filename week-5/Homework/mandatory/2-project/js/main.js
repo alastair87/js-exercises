@@ -3,10 +3,8 @@ const setElementBackgroundColor = (element, backgroundColor) =>
 
 const setTheme = (color1, color2, color3, color4 = "black") => {
   const jumbotron = document.querySelector(".jumbotron"),
-    donateBtn = document.querySelectorAll("a, .btn, .btn-primary, .btn-lrg")[7],
-    volunteerBtn = document.querySelectorAll(
-      "a, .btn, .btn-primary, .btn-lrg"
-    )[8];
+    donateBtn = document.querySelector(".btn.btn-primary.btn-lrg"),
+    volunteerBtn = document.querySelector(".btn.btn-secondary.btn-lrg");
   jumbotron.style.backgroundColor = color1;
   donateBtn.style.backgroundColor = color2;
   volunteerBtn.style.backgroundColor = color3;
